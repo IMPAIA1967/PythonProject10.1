@@ -140,10 +140,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.widget" />
+        <item itemvalue="Python.processing" />
         <item itemvalue="Python.masks" />
-        <item itemvalue="Python.processing" />
-        <item itemvalue="Python.processing" />
-        <item itemvalue="Python.processing" />
+        <item itemvalue="Python.widget" />
+        <item itemvalue="Python.masks" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +302,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject10_1$processing.coverage" NAME="processing Coverage Results" MODIFIED="1748709624519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/PythonProject10_1$widget.coverage" NAME="widget Coverage Results" MODIFIED="1748803709355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/PythonProject10_1$masks.coverage" NAME="masks Coverage Results" MODIFIED="1748803697319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PythonProject10_1$widget.coverage" NAME="widget Coverage Results" MODIFIED="1749942581455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/PythonProject10_1$.coverage" NAME=" Coverage Results" MODIFIED="1749327471533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/PythonProject10_1$masks.coverage" NAME="masks Coverage Results" MODIFIED="1749337942777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
