@@ -9,6 +9,7 @@ def test_filter_empty_data() -> None:
     """Тест фильтрации пустого списка"""
     assert filter_by_state([]) == []
 
+
 def test_sort_with_same_dates() -> None:
     """Тест сортировки при одинаковых датах"""
     test_data: List[Dict[str, Any]] = [
@@ -19,9 +20,11 @@ def test_sort_with_same_dates() -> None:
     # Проверяем что оба элемента присутствуют (порядок может быть любой)
     assert {item["id"] for item in result} == {1, 2}
 
+
 def test_sort_empty_data() -> None:
     """Тест сортировки пустого списка"""
     assert sort_by_date([]) == []
+
 
 def test_sort_invalid_dates() -> None:
     """Тест сортировки с некорректными датами"""
@@ -34,6 +37,7 @@ def test_sort_invalid_dates() -> None:
     assert result[0]["id"] == 1
     assert result[1]["id"] == 2
 
+
 SAMPLE_DATA: List[Dict[str, Any]] = [
     {"id": 1, "state": "EXECUTED", "date": "2023-01-01T00:00:00"},
     {"id": 2, "state": "CANCELED", "date": "2023-01-02T00:00:00"},
@@ -41,6 +45,7 @@ SAMPLE_DATA: List[Dict[str, Any]] = [
     {"id": 4, "state": "PENDING", "date": "2023-01-04T00:00:00"},
     {"id": 5, "state": "EXECUTED", "date": "2023-01-03T00:00:00"},
 ]
+
 
 @pytest.mark.parametrize("state, expected_ids", [
     ("EXECUTED", [1, 3, 5]),
@@ -53,6 +58,7 @@ def test_filter_by_state(state: str, expected_ids: List[int]) -> None:
     """Тестирование фильтрации по статусу"""
     result = filter_by_state(SAMPLE_DATA, state)
     assert [item["id"] for item in result] == expected_ids
+
 
 def test_main_data_processing() -> None:
     """Тестирование обработки данных из main"""
@@ -73,14 +79,17 @@ def test_main_data_processing() -> None:
     assert sorted_data[0]["id"] == 41428829  # Самая новая дата first
     assert sorted_data[-1]["id"] == 939719570  # Самая старая last
 
+
 def test_sort_single_item() -> None:
     """Тест сортировки списка с одним элементом"""
     test_data: List[Dict[str, Any]] = [{"id": 1, "date": "2023-01-01T00:00:00"}]
     assert sort_by_date(test_data) == test_data
 
+
 def test_filter_by_state_empty() -> None:
     """Тест фильтрации с пустым значением state"""
     assert filter_by_state(SAMPLE_DATA, "") == []
+
 
 def test_filter_by_state_unknown() -> None:
     """Тест фильтрации с несуществующим значением state"""
