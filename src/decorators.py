@@ -17,7 +17,13 @@ def write_log(message: str, filename: Optional[str] = None):
 def log(filename: Optional[str] = None) -> Callable:
     """Декоратор для логирования вызовов функций и их результатов"""
     def decorator(func: Callable) -> Callable:
+        """
+        Внутренний декоратор, который добавляет логирование к функции.
+        """
         def wrapper(*args: Any, **kwargs: Any) -> Any:
+            """
+            Обёртка, которая выполняет логирование вызовов декорируемой функции.
+            """
             try:
                 result = func(*args, **kwargs)
                 message = f"{func.__name__} - {result}\n"

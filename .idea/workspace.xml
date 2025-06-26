@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e092bc00-0391-490c-88da-a5f7d8b3cb40" name="Changes" comment="add test decorators and flake8">
+    <list default="true" id="e092bc00-0391-490c-88da-a5f7d8b3cb40" name="Changes" comment="updated README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +55,14 @@
   "keyToString": {
     "Python.decorators.executor": "Run",
     "Python.widget.executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "homework__11__2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -173,9 +175,17 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PY-251.23774.444" />
+        <option value="bundled-python-sdk-890ed5b35930-d9c5bdb153f4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.23774.444" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="249ce124-e48c-407f-8334-6cad36971da7" name="Changes" comment="" />
+      <changelist id="e092bc00-0391-490c-88da-a5f7d8b3cb40" name="Changes" comment="updated README" />
       <created>1748635542970</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -188,6 +198,7 @@
       <workItem from="1749321105436" duration="21298000" />
       <workItem from="1749986760436" duration="4498000" />
       <workItem from="1750030999199" duration="5853000" />
+      <workItem from="1750949295935" duration="773000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -309,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750730493100</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="updated README">
+      <option name="closed" value="true" />
+      <created>1750731135663</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1750731135663</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +374,8 @@
     <MESSAGE value="add generators" />
     <MESSAGE value="add func decorator" />
     <MESSAGE value="add test decorators and flake8" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test decorators and flake8" />
+    <MESSAGE value="updated README" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
