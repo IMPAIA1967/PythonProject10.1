@@ -72,5 +72,3 @@ def test_transaction_descriptions():
         generator = transaction_descriptions([])
         with pytest.raises(StopIteration):
             next(generator)
-
-

@@ -39,6 +39,7 @@ def test_mask_account_card_only_type_no_number() -> None:
     result = mask_account_card("Visa")
     assert result == "Неизвестный тип"
 
+
 @pytest.mark.parametrize("input_data, expected", [
     ("Visa 7000792289606361", "7000 79** **** 6361"),
     ("Счет 73654108430135874305", "**4305"),
