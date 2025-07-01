@@ -35,12 +35,12 @@ from src.generators import card_number_generator, filter_by_currency, transactio
         "to": "Счет 74489636417521191160"
     })
 ])
-def test_filter_by_currency(currency, expected, transactions):
+def test_filter_by_currency(currency: str, expected: Dict[str, any], transactions: List[Dict]) -> None:
     _generator = filter_by_currency(transactions, currency)
     assert next(_generator) == expected
 
 
-def test_card_number_generator():
+def test_card_number_generator() -> None:
     _generator = card_number_generator(1, 5)
     assert next(_generator) == "0000 0000 0000 0001"
     assert next(_generator) == "0000 0000 0000 0002"
@@ -51,24 +51,24 @@ def test_card_number_generator():
         next(_generator)
 
 
-def test_transaction_descriptions():
-    TEST_TRANSACTIONS = [
+def test_transaction_descriptions() -> None:
+    TEST_TRANSACTIONS: List[Dict[str, any]] = [
         {"description": "Перевод организации", "id": 1, "amount": 100},
         {"description": "Перевод со счета на счет", "id": 2, "amount": 200},
         {"description": "Оплата услуг", "id": 3, "amount": 300}
     ]
 
-    def test_returns_correct_descriptions_in_order():
+    def test_returns_correct_descriptions_in_order() -> None:
         """Проверяет порядок возвращаемых описаний"""
-        _generator = transaction_descriptions(TEST_TRANSACTIONS)
+        _generator: Generator[str, None, None] = transaction_descriptions(TEST_TRANSACTIONS)
         assert next(_generator) == "Перевод организации"
         assert next(_generator) == "Перевод со счета на счет"
         assert next(_generator) == "Оплата услуг"
         with pytest.raises(StopIteration):
             next(_generator)
 
-    def test_works_with_empty_list():
+    def test_works_with_empty_list() -> None:
         """Проверяет работу с пустым списком"""
-        generator = transaction_descriptions([])
+        generator: Generator[str, None, None] = transaction_descriptions([])
         with pytest.raises(StopIteration):
             next(generator)
