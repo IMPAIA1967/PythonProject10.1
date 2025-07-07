@@ -1,4 +1,4 @@
-from typing import Dict, Generator, List
+from typing import Dict, Generator, List, Any
 
 import pytest
 
@@ -37,7 +37,7 @@ from src.generators import card_number_generator, filter_by_currency, transactio
         "to": "Счет 74489636417521191160"
     })
 ])
-def test_filter_by_currency(currency: str, expected: Dict[str, any], transactions: List[Dict]) -> None:
+def test_filter_by_currency(currency: str, expected: Dict[str, Any], transactions: List[Dict]) -> None:
     _generator = filter_by_currency(transactions, currency)
     assert next(_generator) == expected
 
