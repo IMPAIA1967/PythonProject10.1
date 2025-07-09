@@ -84,11 +84,12 @@ transactions = (
 def filter_by_currency(operations: list[dict], currency: str) -> Generator:
     """Оставляет только операции с указанной валютой"""
     for operation in operations:
-        if operation["operationAmount"]["currency"]["code"] == currency:
+        amount_details = operation.get("operationAmount")  # Безопасно получаем деталь
+        if amount_details and amount_details.get("currency") == currency:
             yield operation
 
 
-def transaction_descriptions(transactions: list[dict]):
+def transaction_descriptions(transactions: list[dict]) -> Generator:
     """Генератор, который последовательно возвращает описания транзакций"""
     for transaction in transactions:
         yield transaction['description']
